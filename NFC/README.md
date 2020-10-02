@@ -1,4 +1,4 @@
-# NFC (Near Field Communications):
+# NFC (Near Field Communications)
 Dit is een serie van communicatie protocols tussen 2 toestellen. De communicatie verloopt over een afstand van maximum 4cm.
 
 Verschil met RFID is dat RFID read only is. Als je met een contactloze creditcard betaald kan de lezer enkel data inlezen en niet terugsturen
