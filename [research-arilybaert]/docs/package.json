@@ -1,0 +1,19 @@
+{
+  "name": "wot-ari-lybaert",
+  "version": "0.0.1",
+  "description": "A quickstart guide about the technologies Radio Frequency Identification and Near Field Communication",
+  "main": "index.js",
+  "authors": {
+    "name": "Ari Lybaert",
+    "email": "arilybae@student.arteveldehs.be"
+  },
+  "repository": "https://github.com/gdmgent-2021-wot/research-arilybaert/WoT-Ari Lybaert",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.6.0"
+  }
+}

@@ -1,3 +1,4 @@
+
 module.exports = {
     title: 'WoT: Ari Lybaert',
     description: 'A quickstart guide about the technologies Radio Frequency Identification and Near Field Communication',
@@ -7,6 +8,8 @@ module.exports = {
             { text: 'RFID', link: '/RFID/'},
             { text: 'NFC', link: '/NFC/'},
         ],
-        sidebar: 'auto'
-    }
+        sidebar: 'auto',
+    },
+    base: "/research-arilybaert/"
+
 }
