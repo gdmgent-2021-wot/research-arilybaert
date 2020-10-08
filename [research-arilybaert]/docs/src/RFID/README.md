@@ -42,7 +42,44 @@ Door elk apparaat te voorzien van een eigen tag kan je gemakkelijk de ontsmettin
 Gedurende een pandemie kan het van uitermate belang zijn om de voorraad van goederen in realtime bij te houden. Zo kunnen medewerkers extra bestellingen doorgeven waar nodig. Dit kan allemaal heel gemakkelijk met RFID
 
 Zelfs buiten de medische sector kan RFID helpen de verspreiding van het virus verminderen. Door getransporteerde goederen op een geautomatiseerde manier op zoveel mogelijk plaatsten scannen kan men nagaan waar de goederen zich allemaal bevonden hebben en wie ermee in contact is geweest en hoe vaak. De technologie laat ook toe dat men goederen niet eens moet aanraken om te te scannen, dit voorkomt dat mensen de goederen kunnen besmetten.
- 
+
 * Handwas routine:
 Binnen de medische sector is goede handhygiëne heel belangrijk. Dit is niet enkel voor corona. Wat mijn in feite kan dien is aan de kraan een lezer te plaatsen die elke badge van passeren medewerkers uitleest om zo na te kan wanneer en hoe vaak personeel hun handen wast.
+
+## Project toepassing:	
+
+Afgelopen week ben ik op zoek gegaan hoe ik mijn ideeën kan omzetten tot een werkende toepassing. Ik ben begonnen met te kijken hoe ik de RFID-chips zou uitlezen of overschrijven. Gezien ik een Windows lezer heb gekregen heb ik via VirtualBox Windows 10 geïnstalleerd
+
+VirtualBox: https://www.virtualbox.org/wiki/Downloads
+Windows 10: https://www.microsoft.com/en-us/software-download/windows10ISO
+
+Eenmaal je de lezer via usb aansluit begint Windows automatisch de bijhorende drivers te installeren en kan je RFID-chips uitlezen. Het enigste dat je hiervoor moet doen is notepad, word, of andere teksteditor openen je muis actief zetten en de tag op de lezer leggen. 
+
+![GitHub Logo](images/tags.jpeg)
+Format: ![Alt Text](url)
+
+Het enige probleem dat ik ben tegen gekomen is dat ik enkel deze twee tags kan uitlezen. Ik vermoed dat de andere tags werken via protocollen die niet compatibel zijn met de lezer. De kleintjes zijn NFC-tags. Deze kan ik zonder probleem lezen en bewerken met mijn iPhone en de eerste app die ik kon vinden in de appstore.
+
+![GitHub Logo](images/software.png)
+Format: ![Alt Text](url)
+
+Voor nieuwe data te schrijven naar de tags is het een heel ander verhaal. Software voor het overschrijven van tags is helemaal niet zo veelvoorkomend als ik initieel had verwacht. De programma’s die ik tegenkom lijken allemaal te dateren uit de jaren stillekes. Bovendien ben ik er niet in geslaagd het werkend te krijgen.
+
+Als ik opzoek ga naar de bijhorende software voor dit specifiek apparaat kom ik uit op sites als Aliexpress met een shady download link waar de licentiesleutel van de software en de software samen in een zip wordt gegeven. 
+
+Aliexpress product: https://nl.aliexpress.com/item/32721839667.html?spm=a2g0z.12010612.8148356.5.102d217cTDxqOp
+shady downloadlink 1: http://download.5yoa.com/IDW02.zip
+shady downloadlink 2: http://www.jedreksys.com/download/IDRW-V3-T5577-Write-Read-Software.html
+
+
+Uiteindelijk ben ik op een github repository gekomen van iemand die er zijn werk van heeft gemaakt “reverse engineering” toegepast om de software die geschreven is voor een Windows om te zetten naar een python script om het apparaat werkend te krijgen op Mac OSX en Linux. Voor de geïnteresseerden, hij heeft heel het proces op zijn wiki gezet. 
+
+Repository: https://github.com/charlysan/pyrfidhid
+
+![GitHub Logo](images/error.png)
+Format: ![Alt Text](url)
+
+Het zag er allemaal veel belovend uit. Ik heb zijn repository gecloned en zoals vermeld in de readme.md de product_id en vendor_id aangepast naar die van mijn specifiek apparaat. Maar telkens ik het read.py script uitvoer krijg ik een foutmelding. Nochtans de foto’s van zijn apparaat lijken sprekend op die dat ik heb. Maar achteraf bekeken blijkt deze op 13mhz te werken en die van hem op 125khz waardoor de software niet geoptimaliseerd is voor mijn apparaat.
+
+
 

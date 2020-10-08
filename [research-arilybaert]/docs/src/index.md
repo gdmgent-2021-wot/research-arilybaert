@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/rfid-chip.png
+heroImage: assets/img/rfid-chip.png
 heroText: Ari Lybaert
 tagline: Quickstart to RFID and NFC
 actionText: Start Reading →
