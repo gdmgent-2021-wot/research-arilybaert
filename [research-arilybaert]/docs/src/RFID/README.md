@@ -46,7 +46,7 @@ Zelfs buiten de medische sector kan RFID helpen de verspreiding van het virus ve
 * Handwas routine:
 Binnen de medische sector is goede handhygiëne heel belangrijk. Dit is niet enkel voor corona. Wat mijn in feite kan dien is aan de kraan een lezer te plaatsen die elke badge van passeren medewerkers uitleest om zo na te kan wanneer en hoe vaak personeel hun handen wast.
 
-## Project toepassing:	
+## Project toepassing
 
 Afgelopen week ben ik op zoek gegaan hoe ik mijn ideeën kan omzetten tot een werkende toepassing. Ik ben begonnen met te kijken hoe ik de RFID-chips zou uitlezen of overschrijven. Gezien ik een Windows lezer heb gekregen heb ik via VirtualBox Windows 10 geïnstalleerd
 
