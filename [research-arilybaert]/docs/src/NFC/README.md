@@ -10,5 +10,4 @@ NFC bouwt hier verder op zodat communicatie van 2 kanten mogelijk is.
 * Contactloze betaling
 
 Deze technologie wordt gebruikt om snel apparaten met elkaar te verbinden. Vanaf dat je ze dicht tegen elkaar houdt wordt de NFC-tag geactiveerd en zorgt voor een snelle koppeling van 2 apparaten. De koppeling gebeurt dan via bluetooth of Wi-Fi
-NFC kan gebruikt worden voor elektronische identiteitsdocumenten, hotelpassen, of contactloze betaling
-
+NFC kan gebruikt worden voor elektronische identiteitsdocumenten, hotelpassen, of contactloze betaling.
