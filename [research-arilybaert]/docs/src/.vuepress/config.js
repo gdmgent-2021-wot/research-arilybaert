@@ -8,6 +8,7 @@ module.exports = {
             { text: 'RFID', link: '/RFID/'},
             { text: 'NFC', link: '/NFC/'},
             { text: 'Uitwerking', link: '/Uitwerking/'},
+            { text: 'Tutorial', link: '/Tutorial/'},
         ],
         sidebar: 'auto',
     },
